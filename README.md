@@ -57,19 +57,17 @@ OPENAI_API_KEY=your_api_key_here
 ## Project Structure
 
 ```
-.
-├── assets/           # Project assets (images, diagrams)
-│   └── architecture.png  # System architecture diagram
+
 ├── data/
-│    └── image/      # Cleaned data from clean.py   
-├── demo/            # Video demo
+│    └── clean/      # Cleaned data from clean.py   
+├── demo/            # Video demo + architecture.png
 ├── issues/          # Raw newsletter content (images and JSON data)
 ├── index/           # Vector store directory
 │   ├── text/        # Text embeddings
 │   └── image/       # Image embeddings
 ├── scraping.py      # Scrapes The Batch newsletter content
 ├── clean.py         # Cleans and processes scraped data
-├── build_vectors.py  # Creates vector embeddings for text and images
+├── build_vectors.py # Creates vector embeddings database for text and images
 ├── ask.py           # Main application with RAG implementation
 ├── requirements.txt # Project dependencies
 └── .env            # Environment variables
